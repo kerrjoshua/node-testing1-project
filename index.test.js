@@ -159,10 +159,10 @@ describe('[Exercise 6] Car', () => {
 describe('[Exercise 7] isEvenNumberAsync',  () => {
   test('[19] resolves true if passed an even number', async() => {
     const isEven = await utils.isEvenNumberAsync(2)
-    expect(isEven).toBeTruthy
+    expect(isEven).toBe(true)
   })
   test('[20] resolves false if passed an odd number', async () => {
     const isEven = await utils.isEvenNumberAsync(3)
-    expect(isEven).toBeFalsy
+    expect(isEven).toBe(false)
   })
 })
